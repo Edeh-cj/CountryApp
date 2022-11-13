@@ -1,16 +1,42 @@
-# hng_countryapp_3
+# CountryApp
 
-A new Flutter project.
+A Mobile Application to view interactively a list of Countries and some informations about them.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+The application will search through the list of Countries returned from the api.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The application will Filter the list of Countries by timezones and continents.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The application will automatically adapt to its System's UI Orientation (Lanscape/Portrait)
+
+The application will automatically adapt to its System's ThemeMode (Light/Dark)
+
+
+## CodeBase
+
+
+## Design
+
+
+## Packages
+
+Provider: State Management.
+
+get_it: Service Locator and injector.
+
+
+
+## APK link
+
+https://drive.google.com/file/d/1mVX8Ygh91sA12oiaSP7WVeyBKJ3nBe96/view?usp=share_link
+
+## Appetize.io link
+
+
+## Social links
+
+https://facebook.com/edeh.cjjoshua
+
+ceejosh360@gmail.com
