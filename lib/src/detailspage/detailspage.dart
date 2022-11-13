@@ -59,8 +59,8 @@ class _DetailspageState extends State<Detailspage> {
                             });
                           },
                           children: [
-                            Image.network(country.coatOfArms?? 'https://mainfacts.com/media/images/coats_of_arms/br.png'),
-                            Image.network(country.flags?? 'https://flagcdn.com/w320/br.png')
+                            Image.network(country.flags?? 'https://flagcdn.com/w320/br.png'),
+                            Image.network(country.coatOfArms?? 'https://mainfacts.com/media/images/coats_of_arms/br.png')
                           ],
                         ),
 
