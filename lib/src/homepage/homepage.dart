@@ -34,8 +34,8 @@ class _HomepageState extends State<Homepage> {
         title: Column(
           children: [
              exploreAndSunny(screenSize, context),
-             textfield_(context, Provider.of<CountryNotifier>(context).countryListObject),
-             filterAndLanguage(screenSize, backgroundColor_, textcolor)                                            
+             textfield_(context, Provider.of<CountryNotifier>(context).countryListObject, backgroundColor_),
+             filterAndLanguage(screenSize, backgroundColor_, textcolor, context)                                            
                  
           ],
         ),        
@@ -48,7 +48,7 @@ class _HomepageState extends State<Homepage> {
               if (snapshot.hasData){
                 return Consumer<CountryNotifier>(
                   builder: (context, value, child) {                    
-                    return countryList(value, context);
+                    return countryList(value, context, backgroundColor_);
                   }
                 );
               } else if(snapshot.hasError){

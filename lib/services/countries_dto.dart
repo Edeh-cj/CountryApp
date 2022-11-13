@@ -14,14 +14,15 @@ class CountriesDTO {
         drivingSide: e['car']['side'],
         capital: e['capital']?[0],
         population: e['population'],
-        dialingCode: e['idd']['root'] + e['idd']['suffixes'][0],
+        dialingCode: e['idd']['root'] ,
         timezones: e['timezones'][0],
         coatOfArms: e['coatOfArms']['png'],
         startOfWeek: e['startOfWeek'],
-        independent: e['independent'],
+        independent: e?['independent'],
         flags: e['flags']['png'],
         government: e['name']['official'],
-        area: e['area']
+        area: e['area'],
+        continents: e['continents'][0]
 
         ), 
       ).toList(),

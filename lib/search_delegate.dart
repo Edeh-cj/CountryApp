@@ -6,8 +6,9 @@ import 'package:hng_countryapp_3/src/homepage/homeWidgets.dart';
 class MySearchDelegate extends SearchDelegate<String>{
   final BuildContext providercontext;
   final CountryListObject countrylistobject;
+  final Color background;
 
-  MySearchDelegate({required this.providercontext, required this.countrylistobject});
+  MySearchDelegate({required this.providercontext, required this.countrylistobject, required this.background});
   
   @override
   List<Widget>? buildActions(BuildContext context) {
@@ -41,10 +42,13 @@ class MySearchDelegate extends SearchDelegate<String>{
     if (query.isEmpty){
       return const Align();
     }else {
-      return ListView.builder(
-        itemBuilder: (BuildContext context, int index) { 
-          return countrytile(suggestionList_[index], context);
-         },
+      return SizedBox(
+        child: ListView.builder(
+          itemBuilder: (BuildContext context, int index) { 
+            return countrytile(suggestionList_[index], context, background);
+           },
+          itemCount: suggestionList_.length,
+        ),
       );
     }
     

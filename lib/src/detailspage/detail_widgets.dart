@@ -26,7 +26,7 @@ Widget countryData(CountryObject country, BuildContext context, Size size){
             textData('Currency', context, country.currency),
             textData('GDP', context, country.gdp),
             const SizedBox(height: 10,),
-            textData('Time zone', context, country.timezones.map((e) => e+ ' ').toString()),
+            textData('Time zone', context, country.timezones.toString()),
             textData('Date format', context, country.dateformat),
             textData('Dialing code', context, country.dialingCode),
             textData('Driving side', context, country.drivingSide)
@@ -38,7 +38,7 @@ Widget countryData(CountryObject country, BuildContext context, Size size){
                 
 }
 
-Widget textData(String title,BuildContext context, String value){
+Widget textData(String title,BuildContext context, String? value){
   return
   Padding(
       padding: const EdgeInsets.all(6.50),

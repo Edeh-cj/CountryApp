@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ThemeNotifier with ChangeNotifier{
-  ThemeMode thememode = ThemeMode.system;
+  ThemeMode thememode = ThemeMode.light;
 
   IconData get themeicon{
     if (thememode== ThemeMode.dark){
