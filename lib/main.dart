@@ -15,7 +15,7 @@ void main() {
         ChangeNotifierProvider(create: (context) => FilterNotifier()),     
         ChangeNotifierProvider(create: (context) => ThemeNotifier())
       ], 
-      child: const MyApp(),
+      child: MyApp(),
       )
   );
 }
